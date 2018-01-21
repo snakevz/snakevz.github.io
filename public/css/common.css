@@ -1,0 +1,64 @@
+::-webkit-input-placeholder {
+  color: #cacaca;
+}
+::-moz-placeholder {
+  color: #cacaca;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #cacaca;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #cacaca;
+}
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+button,
+input {
+  font-size: 30pt !important;
+}
+.buttons button {
+  width: 100% !important;
+  margin-top: 10px;
+}
+.fields input {
+  border: 1px solid #cacaca;
+  line-height: 80px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fields .focused {
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4) !important;
+  cursor: text;
+}
+.fields .valid {
+  border-color: #98c798;
+  box-shadow: 0px 0px 5px  #98c798;
+  color: #459e45;
+}
+.fields .no-valid {
+  border-color: #ff4a4a;
+  color: #ff4a4a;
+  box-shadow: 0px 0px 5px  #ff4a4a;
+}
+@media (max-width: 576px) {
+  button,
+  input {
+    font-size: 20pt !important;
+  }
+  h1 {
+    font-size: 22pt !important;
+  }
+  h1 img {
+    height: 20px;
+  }
+  .fields input {
+    line-height: 60px;
+  }
+}

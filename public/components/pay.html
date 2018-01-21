@@ -1,0 +1,44 @@
+
+ 
+
+        <h1 class="text-center mb-4">
+            Оплата услуг&nbsp;
+            <img height="60px" src="/assets/images/{{operator}}.png" alt=""/>
+        </h2>   
+        <div class="fields"> 
+            <input type="text" 
+            ng-class="{'focused':model=='phone','valid': models.phone.valid,'no-valid':!models.phone.valid && model!='phone'}" 
+            ng-click="model='phone'" 
+            ng-readonly="true" 
+            ng-model="models.phone.masked"
+            placeholder="номер телефона..."
+            >
+            <input type="text"
+            ng-class="{'focused':model=='money','valid': models.money.valid,'no-valid':!models.money.valid}"
+            ng-click="model='money'" 
+            ng-readonly="true" 
+            ng-model="models.money.masked"
+            placeholder="сумма..."
+            >
+        </div>
+        <div class="row buttons">
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(1)">1</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(2)">2</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(3)">3</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(4)">4</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(5)">5</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(6)">6</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(7)">7</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(8)">8</button></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(9)">9</button></div>
+            <div class="col-4"></div>
+            <div class="col-4"><button class="btn btn-primary" ng-click="clickButton(0)">0</button></div>
+            <div class="col-4"><button class="btn btn-warning" ng-click="clickButton(false)">с</button></div>
+        </div>  
+        <br/>
+        <button class="btn btn-success"
+        ng-disabled="!(models.phone.valid && models.money.valid)" 
+        ng-click="done()">Пополнить</button>
+        <button class="btn btn-danger float-right"
+        ng-click="back()">назад</button>
+ 
