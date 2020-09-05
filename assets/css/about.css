@@ -1,0 +1,14 @@
+.header-foot-inner {
+  color: #fff; }
+
+.banner {
+  background: url("../images/about-banner.jpg") center/cover no-repeat; }
+  .banner-inner {
+    height: 400px;
+    padding-left: 80px; }
+
+.about-manager {
+  background: #F5F8F8;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden; }

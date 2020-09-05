@@ -1,0 +1,100 @@
+.page {
+  padding-top: 0; }
+
+.header-head {
+  background-color: transparent; }
+
+.header-foot-inner {
+  color: #fff; }
+
+.carousel {
+  overflow: hidden; }
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("") center/cover no-repeat;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: scale(1.1); }
+    .carousel-image--active {
+      opacity: 1;
+      transform: scale(1); }
+  .carousel-dots {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center; }
+  .carousel-dot {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: -50px 10px 0 10px; }
+    .carousel-dot--active {
+      background-color: #7da541;
+      border-color: #7da541; }
+  .carousel-inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff; }
+  @media (min-width: 992px) {
+    .carousel-dot {
+      cursor: pointer;
+      margin: -150px 10px 0 10px; }
+      .carousel-dot:hover {
+        border-color: #7da541; } }
+
+.articles {
+  padding: 80px 0; }
+
+.article {
+  background-color: #cac1c1;
+  border-radius: 8px;
+  color: #000;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .article-image {
+    background: url("") center/cover no-repeat;
+    flex: 1; }
+  .article-text {
+    background-color: #fff;
+    padding: 30px 40px 40px 40px; }
+
+.owner {
+  background-color: #fff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden; }
+  .owner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 2000px solid transparent;
+    border-top: 400px solid #14282d; }
+  .owner-text {
+    padding-top: 130px; }
+
+.advantage {
+  padding: 100px 0 150px 0; }
+
+.partners {
+  background-color: #f5f8f8; }
+  .partners-item {
+    height: 200px;
+    background: #f1f1f1 url("../images/home-partner-1.jpg") center no-repeat; }
+  @media (min-width: 992px) {
+    .partners-item {
+      cursor: pointer; } }
